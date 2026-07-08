@@ -6,373 +6,24 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Mangolou</title>
+<title>Mangolou | Reino Digital de Manhwas</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=UnifrakturCook:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-
-body{
-
-font-family:'Poppins',sans-serif;
-
-background:
-radial-gradient(circle at top,#0f766e 0%,#083344 25%,#020617 70%);
-
-color:white;
-
-min-height:100vh;
-
-overflow-x:hidden;
-
-}
-
-
-/* detalhes medievais */
-
-body::before{
-
-content:"✦  ✧  ✦  ✧  ✦";
-
-position:fixed;
-
-top:30px;
-
-left:0;
-
-width:100%;
-
-text-align:center;
-
-font-size:25px;
-
-color:white;
-
-opacity:.25;
-
-letter-spacing:20px;
-
-}
-
-
-
-header{
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-padding:30px 8%;
-
-}
-
-
-
-.logo img{
-
-width:190px;
-
-height:auto;
-
-filter:drop-shadow(0 0 15px #14b8a6);
-
-}
-
-
-
-nav a{
-
-color:white;
-
-text-decoration:none;
-
-margin-left:25px;
-
-font-size:15px;
-
-opacity:.8;
-
-transition:.3s;
-
-}
-
-
-nav a:hover{
-
-color:#2dd4bf;
-
-}
-
-
-
-
-
-.hero{
-
-padding:70px 8%;
-
-display:flex;
-
-justify-content:center;
-
-}
-
-
-
-.hero-box{
-
-max-width:900px;
-
-text-align:center;
-
-padding:70px 45px;
-
-
-background:
-
-rgba(255,255,255,.08);
-
-
-border:1px solid rgba(255,255,255,.25);
-
-
-border-radius:40px;
-
-
-backdrop-filter:blur(20px);
-
-
-box-shadow:
-
-0 30px 80px rgba(0,0,0,.6);
-
-
-}
-
-
-
-.ornament{
-
-font-size:35px;
-
-color:white;
-
-opacity:.7;
-
-margin-bottom:25px;
-
-}
-
-
-
-h1{
-
-font-family:'Cinzel',serif;
-
-font-size:60px;
-
-}
-
-
-h1 span{
-
-color:#2dd4bf;
-
-}
-
-
-
-.hero p{
-
-font-size:20px;
-
-margin-top:25px;
-
-opacity:.85;
-
-}
-
-
-
-.button{
-
-
-display:inline-block;
-
-margin-top:40px;
-
-padding:16px 45px;
-
-
-background:
-
-linear-gradient(90deg,#14b8a6,#06b6d4);
-
-
-border-radius:50px;
-
-
-color:white;
-
-text-decoration:none;
-
-font-weight:bold;
-
-
-box-shadow:
-
-0 0 30px #14b8a6;
-
-
-transition:.3s;
-
-}
-
-
-.button:hover{
-
-transform:scale(1.08);
-
-}
-
-
-
-
-section{
-
-padding:50px 8%;
-
-}
-
-
-
-.title{
-
-font-family:'Cinzel',serif;
-
-text-align:center;
-
-font-size:35px;
-
-margin-bottom:40px;
-
-}
-
-
-
-.cards{
-
-display:flex;
-
-gap:25px;
-
-flex-wrap:wrap;
-
-}
-
-
-
-.card{
-
-
-flex:1;
-
-min-width:260px;
-
-
-background:
-
-rgba(255,255,255,.07);
-
-
-border:1px solid rgba(255,255,255,.2);
-
-
-padding:35px;
-
-
-border-radius:30px;
-
-
-text-align:center;
-
-
-transition:.4s;
-
-
-}
-
-
-
-.card:hover{
-
-transform:translateY(-12px);
-
-
-border-color:#2dd4bf;
-
-
-}
-
-
-
-.icon{
-
-font-size:45px;
-
-margin-bottom:20px;
-
-}
-
-
-
-.divider{
-
-text-align:center;
-
-font-size:30px;
-
-margin:20px;
-
-color:white;
-
-opacity:.6;
-
-}
-
-
-
-footer{
-
-text-align:center;
-
-padding:50px;
-
-opacity:.6;
-
-}
-
-
-
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
 
 <body>
+
+
+<div class="moon"></div>
+
+
+<div class="particles"></div>
 
 
 
@@ -381,7 +32,7 @@ opacity:.6;
 
 <div class="logo">
 
-<img src="b20c381d1dad8ca77c717fa617d8d83f_2_1_art.png" alt="Mangolou">
+🌙 Mangolou
 
 </div>
 
@@ -389,11 +40,8 @@ opacity:.6;
 <nav>
 
 <a href="#">Início</a>
-
 <a href="#">Biblioteca</a>
-
 <a href="#">Favoritos</a>
-
 <a href="#">Perfil</a>
 
 </nav>
@@ -404,17 +52,29 @@ opacity:.6;
 
 
 
-<div class="hero">
+<main>
 
 
-<div class="hero-box">
+
+<section class="hero">
+
+
+<div class="castle">
+
+♜
+
+</div>
+
+
+<div class="magic-frame">
 
 
 <div class="ornament">
 
-✧ ✦ ✧
+✦ ✧ ✦
 
 </div>
+
 
 
 <h1>
@@ -424,120 +84,20 @@ Histórias que <span>ganham vida</span>
 </h1>
 
 
+
 <p>
 
-Sua nova casa para ler manhwas, descobrir histórias e acompanhar aventuras inesquecíveis.
+Sua nova casa para ler manhwas, descobrir mundos e viver grandes aventuras.
 
 </p>
 
 
-<a class="button">
 
-Entrar na biblioteca
+<button>
 
-</a>
+Entrar na Biblioteca
 
-
-
-</div>
-
-</div>
-
-
-
-<div class="divider">
-
-♜ ✦ ♜
-
-</div>
-
-
-
-
-<section>
-
-
-<h2 class="title">
-
-O Reino Mangolou
-
-</h2>
-
-
-
-<div class="cards">
-
-
-<div class="card">
-
-<div class="icon">
-
-📖
-
-</div>
-
-<h3>
-
-Biblioteca
-
-</h3>
-
-<p>
-
-Explore novos universos e acompanhe seus capítulos favoritos.
-
-</p>
-
-</div>
-
-
-
-<div class="card">
-
-<div class="icon">
-
-🌙
-
-</div>
-
-<h3>
-
-Experiência
-
-</h3>
-
-<p>
-
-Uma leitura imersiva com estética de fantasia medieval.
-
-</p>
-
-</div>
-
-
-
-
-<div class="card">
-
-<div class="icon">
-
-⭐
-
-</div>
-
-<h3>
-
-Favoritos
-
-</h3>
-
-<p>
-
-Guarde suas histórias preferidas.
-
-</p>
-
-</div>
+</button>
 
 
 </div>
@@ -548,16 +108,167 @@ Guarde suas histórias preferidas.
 
 
 
+
+<section class="pages">
+
+
+<h2>
+
+Biblioteca Real
+
+</h2>
+
+
+<div class="roman">
+
+I　II　III　IV　V
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="library">
+
+
+<div class="card">
+
+
+<div class="cover">
+
+📖
+
+</div>
+
+
+<h3>
+
+Novas histórias
+
+</h3>
+
+
+<p>
+
+Autor desconhecido
+
+<br>
+
+Fantasia • Aventura
+
+</p>
+
+
+<button>
+
+Começar Leitura
+
+</button>
+
+
+</div>
+
+
+
+
+<div class="card">
+
+
+<div class="cover">
+
+🌙
+
+</div>
+
+
+<h3>
+
+Em breve
+
+</h3>
+
+
+<p>
+
+Novos universos serão revelados.
+
+</p>
+
+
+<button>
+
+Explorar
+
+</button>
+
+
+</div>
+
+
+
+<div class="card">
+
+
+<div class="cover">
+
+✨
+
+</div>
+
+
+<h3>
+
+Capítulo I
+
+</h3>
+
+
+<p>
+
+Sua jornada começa aqui.
+
+</p>
+
+
+<button>
+
+Ler
+
+</button>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+</main>
+
+
+
+
 <footer>
 
 Mangolou © 2026
 
 <br>
 
-Um universo de manhwas para explorar
+Um reino digital de histórias
 
 </footer>
 
+
+
+
+<script src="script.js"></script>
 
 
 </body>
