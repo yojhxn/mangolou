@@ -1,11 +1,9 @@
-const buttons = document.querySelectorAll("button");
+document.querySelectorAll("button").forEach(btn=>{
 
-buttons.forEach(button => {
+btn.onclick=()=>{
 
-button.addEventListener("click",()=>{
+btn.innerHTML="✦ Abrindo ✦";
 
-button.innerHTML="✦ Abrindo Reino ✦";
-
-});
+}
 
 });
