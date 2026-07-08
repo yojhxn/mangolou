@@ -1,109 +1,227 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Mangolou</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
 <style>
 
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:Arial, sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
+
 body{
-  background:
-  radial-gradient(circle at top,#2563ff 0%,#071a3d 40%,#030712 100%);
-  color:white;
-  min-height:100vh;
+
+font-family:'Poppins',sans-serif;
+
+background:
+linear-gradient(
+135deg,
+#020617,
+#071a3d,
+#123b85
+);
+
+color:white;
+
+min-height:100vh;
+
 }
 
 
 /* MENU */
 
 header{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:25px 8%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:25px 8%;
+
 }
+
 
 .logo{
-  font-size:32px;
-  font-weight:bold;
-  color:#5db3ff;
+
+font-family:'Cinzel',serif;
+
+font-size:38px;
+
+color:#60a5fa;
+
+letter-spacing:2px;
+
 }
 
+
 nav a{
-  color:white;
-  text-decoration:none;
-  margin-left:20px;
-  opacity:.8;
+
+color:white;
+
+text-decoration:none;
+
+margin-left:25px;
+
+font-size:15px;
+
+opacity:.8;
+
+transition:.3s;
+
+}
+
+
+nav a:hover{
+
+color:#60a5fa;
+
 }
 
 
 /* HERO */
 
+
 .hero{
-  padding:60px 8%;
-  display:flex;
-  justify-content:center;
-  text-align:center;
+
+padding:70px 8%;
+
+display:flex;
+
+justify-content:center;
+
 }
+
 
 .hero-box{
 
-max-width:700px;
-padding:45px;
 
-background:rgba(255,255,255,0.12);
-border-radius:30px;
+max-width:850px;
 
-backdrop-filter:blur(15px);
+text-align:center;
 
-box-shadow:0 20px 50px rgba(0,0,0,.3);
+padding:60px 40px;
+
+
+background:
+rgba(255,255,255,.10);
+
+
+border-radius:35px;
+
+
+backdrop-filter:blur(20px);
+
+
+box-shadow:
+0 20px 80px rgba(0,0,0,.4);
+
+
+animation:entrada 1s ease;
+
 
 }
+
+
+
+@keyframes entrada{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
 
 
 .hero h1{
+
 font-size:55px;
+
+font-family:'Cinzel',serif;
+
 margin-bottom:20px;
+
 }
+
 
 
 .hero span{
-color:#5db3ff;
+
+color:#60a5fa;
+
 }
+
 
 
 .hero p{
+
 font-size:20px;
+
 opacity:.85;
-line-height:1.5;
+
 }
 
 
-button{
 
-margin-top:30px;
+.btn{
+
+
+display:inline-block;
+
+margin-top:35px;
+
+padding:16px 40px;
+
 
 background:#2563ff;
-border:none;
 
-color:white;
-
-padding:16px 35px;
 
 border-radius:40px;
 
-font-size:18px;
 
-cursor:pointer;
+color:white;
+
+
+text-decoration:none;
+
+
+transition:.3s;
+
+
+}
+
+
+.btn:hover{
+
+transform:scale(1.08);
 
 }
 
@@ -118,40 +236,71 @@ padding:40px 8%;
 }
 
 
+
 .title{
 
-font-size:30px;
+font-size:32px;
+
 margin-bottom:25px;
 
 }
+
 
 
 .cards{
 
 display:flex;
 
-gap:20px;
+gap:25px;
 
 flex-wrap:wrap;
 
 }
 
 
+
 .card{
+
 
 flex:1;
 
-min-width:250px;
+min-width:260px;
 
-background:rgba(255,255,255,.08);
 
-padding:30px;
+padding:35px;
 
-border-radius:25px;
 
-text-align:center;
+border-radius:30px;
+
+
+background:
+
+rgba(255,255,255,.08);
+
+
+backdrop-filter:blur(15px);
+
+
+transition:.3s;
+
 
 }
+
+
+
+.card:hover{
+
+
+transform:translateY(-10px);
+
+
+background:
+
+rgba(255,255,255,.15);
+
+
+}
+
 
 
 .icon{
@@ -162,16 +311,6 @@ margin-bottom:15px;
 
 }
 
-
-/* FUTURO */
-
-.future{
-
-margin-top:20px;
-
-border:1px dashed rgba(255,255,255,.4);
-
-}
 
 
 footer{
@@ -184,6 +323,8 @@ opacity:.6;
 
 }
 
+
+
 </style>
 
 </head>
@@ -192,17 +333,25 @@ opacity:.6;
 <body>
 
 
+
 <header>
 
+
 <div class="logo">
+
 🌙 Mangolou
+
 </div>
 
 
 <nav>
 
 <a href="#">Início</a>
+
 <a href="#">Biblioteca</a>
+
+<a href="#">Autores</a>
+
 <a href="#">Perfil</a>
 
 </nav>
@@ -219,18 +368,26 @@ opacity:.6;
 
 
 <h1>
+
 Histórias que <span>ganham vida</span>
+
 </h1>
 
 
 <p>
-Uma nova plataforma para descobrir, criar e acompanhar manhwas autorais.
+
+Uma plataforma para descobrir, criar e acompanhar manhwas autorais.
+
 </p>
 
 
-<button>
-Explorar Mangolou
-</button>
+
+<a class="btn" href="#biblioteca">
+
+Começar leitura
+
+</a>
+
 
 
 </div>
@@ -240,64 +397,98 @@ Explorar Mangolou
 
 
 
-<section>
+
+<section id="biblioteca">
 
 
 <h2 class="title">
-✨ Em destaque
+
+🔥 Em destaque
+
 </h2>
+
 
 
 <div class="cards">
 
 
-<div class="card future">
+<div class="card">
 
 <div class="icon">
+
 📚
+
 </div>
 
 <h3>
-Novas histórias chegando
+
+Biblioteca
+
 </h3>
 
 <p>
-Em breve você poderá encontrar obras incríveis aqui.
+
+Novas histórias serão adicionadas em breve.
+
 </p>
 
 </div>
 
 
-<div class="card future">
+
+
+<div class="card">
+
 
 <div class="icon">
-⭐
+
+✨
+
 </div>
+
 
 <h3>
-Favoritos
+
+Autores
+
 </h3>
 
+
 <p>
-Salve suas histórias preferidas.
+
+Um espaço para novos criadores.
+
 </p>
+
 
 </div>
 
 
-<div class="card future">
+
+
+<div class="card">
+
 
 <div class="icon">
-👤
+
+🌎
+
 </div>
 
+
 <h3>
-Seu perfil
+
+Comunidade
+
 </h3>
 
+
 <p>
-Acompanhe sua jornada de leitura.
+
+Conectando leitores e artistas.
+
 </p>
+
 
 </div>
 
@@ -309,15 +500,17 @@ Acompanhe sua jornada de leitura.
 
 
 
+
 <footer>
 
 Mangolou © 2026  
 <br>
-Uma plataforma de histórias autorais
+Sua nova casa para manhwas autorais
 
 </footer>
 
 
 
 </body>
+
 </html>
