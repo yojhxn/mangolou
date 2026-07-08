@@ -10,7 +10,396 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=UnifrakturCook:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+
+body{
+
+background:
+radial-gradient(circle at top,#155e75,#082f49,#020617);
+
+color:white;
+
+font-family:'Poppins',sans-serif;
+
+min-height:100vh;
+
+overflow-x:hidden;
+
+}
+
+
+
+/* partículas mágicas */
+
+body::before{
+
+content:"✦  ✧  ✦  ✧  ✦";
+
+position:fixed;
+
+top:20px;
+
+left:0;
+
+width:100%;
+
+text-align:center;
+
+font-size:30px;
+
+color:white;
+
+opacity:.25;
+
+letter-spacing:20px;
+
+}
+
+
+
+/* CABEÇALHO */
+
+
+header{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:25px 8%;
+
+}
+
+
+
+.logo img{
+
+width:220px;
+
+filter:drop-shadow(0 0 20px #22d3ee);
+
+}
+
+
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+margin-left:25px;
+
+font-family:'Cinzel';
+
+}
+
+
+
+nav a:hover{
+
+color:#22d3ee;
+
+}
+
+
+
+/* HERO */
+
+
+.hero{
+
+padding:80px 8%;
+
+text-align:center;
+
+}
+
+
+
+.frame{
+
+max-width:900px;
+
+margin:auto;
+
+padding:60px;
+
+
+background:
+
+rgba(255,255,255,.08);
+
+
+border:
+
+2px solid rgba(255,255,255,.35);
+
+
+border-radius:40px;
+
+
+backdrop-filter:blur(20px);
+
+
+box-shadow:
+
+0 0 60px rgba(34,211,238,.25);
+
+}
+
+
+
+.ornament{
+
+font-size:35px;
+
+margin-bottom:20px;
+
+}
+
+
+
+h1{
+
+font-family:'UnifrakturCook';
+
+font-size:65px;
+
+}
+
+
+
+h1 span{
+
+color:#22d3ee;
+
+}
+
+
+
+.hero p{
+
+font-size:20px;
+
+margin:25px;
+
+opacity:.9;
+
+}
+
+
+
+/* BOTÃO */
+
+
+.magic-button{
+
+
+display:inline-block;
+
+padding:16px 45px;
+
+
+background:
+
+linear-gradient(#f3d9a5,#b88942);
+
+
+border:
+
+2px solid white;
+
+
+border-radius:30px;
+
+
+color:#111;
+
+
+font-weight:bold;
+
+
+cursor:pointer;
+
+
+transition:.4s;
+
+}
+
+
+
+.magic-button:hover{
+
+transform:scale(1.08);
+
+box-shadow:0 0 30px #22d3ee;
+
+}
+
+
+
+
+/* BIBLIOTECA */
+
+
+.library{
+
+padding:40px 8%;
+
+text-align:center;
+
+}
+
+
+
+h2{
+
+font-family:'Cinzel';
+
+font-size:40px;
+
+}
+
+
+
+.roman{
+
+margin:25px;
+
+font-family:'Cinzel';
+
+font-size:30px;
+
+color:#f3d9a5;
+
+}
+
+
+
+.cards{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+}
+
+
+
+.card{
+
+
+width:300px;
+
+
+padding:30px;
+
+
+background:
+
+linear-gradient(
+135deg,
+rgba(255,255,255,.12),
+rgba(255,255,255,.04)
+);
+
+
+border:
+
+1px solid white;
+
+
+border-radius:30px;
+
+
+transition:.4s;
+
+}
+
+
+
+.card:hover{
+
+transform:translateY(-10px);
+
+border-color:#22d3ee;
+
+}
+
+
+
+.cover{
+
+height:180px;
+
+background:#020617;
+
+border-radius:20px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:70px;
+
+margin-bottom:20px;
+
+}
+
+
+
+.card button{
+
+margin-top:20px;
+
+padding:12px 30px;
+
+border-radius:25px;
+
+border:none;
+
+background:#22d3ee;
+
+color:#020617;
+
+font-weight:bold;
+
+}
+
+
+
+/* RODAPÉ */
+
+
+footer{
+
+text-align:center;
+
+padding:50px;
+
+opacity:.7;
+
+}
+
+
+</style>
 
 </head>
 
@@ -18,10 +407,9 @@
 <body>
 
 
-<div class="magic-particles"></div>
-
 
 <header>
+
 
 <div class="logo">
 
@@ -33,17 +421,25 @@
 <nav>
 
 <a href="#">Início</a>
+
 <a href="#">Biblioteca</a>
+
 <a href="#">Favoritos</a>
+
 <a href="#">Perfil</a>
 
 </nav>
+
 
 </header>
 
 
 
+
 <section class="hero">
+
+
+<div class="frame">
 
 
 <div class="ornament">
@@ -51,9 +447,6 @@
 ✦ ✧ ✦
 
 </div>
-
-
-<div class="content">
 
 
 <h1>
@@ -65,16 +458,16 @@ Histórias que <span>ganham vida</span>
 
 <p>
 
-Sua nova casa para ler manhwas, descobrir mundos e acompanhar aventuras inesquecíveis.
+Sua nova casa para ler manhwas, descobrir mundos e viver grandes aventuras.
 
 </p>
 
 
-<button>
+<div class="magic-button">
 
 Entrar na Biblioteca
 
-</button>
+</div>
 
 
 </div>
@@ -95,7 +488,7 @@ Biblioteca Real
 </h2>
 
 
-<div class="pages">
+<div class="roman">
 
 I　II　III　IV　V
 
@@ -106,6 +499,7 @@ I　II　III　IV　V
 <div class="cards">
 
 
+
 <div class="card">
 
 <div class="cover">
@@ -114,13 +508,11 @@ I　II　III　IV　V
 
 </div>
 
-
 <h3>
 
 Novas histórias
 
 </h3>
-
 
 <p>
 
@@ -128,13 +520,11 @@ Novos mundos serão revelados em breve.
 
 </p>
 
-
 <button>
 
 Explorar
 
 </button>
-
 
 </div>
 
@@ -149,27 +539,23 @@ Explorar
 
 </div>
 
-
 <h3>
 
 Fantasia
 
 </h3>
 
-
 <p>
 
-Aventuras aguardam por você.
+Aventuras aguardam.
 
 </p>
-
 
 <button>
 
 Ler
 
 </button>
-
 
 </div>
 
@@ -184,27 +570,23 @@ Ler
 
 </div>
 
-
 <h3>
 
 Capítulo I
 
 </h3>
 
-
 <p>
 
-Sua jornada começa aqui.
+Sua jornada começa.
 
 </p>
-
 
 <button>
 
 Começar
 
 </button>
-
 
 </div>
 
@@ -228,8 +610,6 @@ Um reino digital de histórias
 
 </footer>
 
-
-<script src="script.js"></script>
 
 
 </body>
